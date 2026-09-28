@@ -1,0 +1,56 @@
+<button id="bb-launch" type="button">关卡编辑器</button>
+<section id="bb-studio" aria-label="Bubble Block 编辑器">
+  <header class="bb-header">
+    <span class="bb-brand">Bubble Block <span class="bb-tag" id="bb-page-tag">关卡编辑器</span></span>
+    <button class="bb-layout-action" id="bb-new">新建</button><button class="bb-layout-action" id="bb-open">打开</button>
+    <button id="bb-save" class="primary">保存</button>
+    <button id="bb-undo" title="Command / Ctrl + Z">撤销</button><button id="bb-redo" title="Command / Ctrl + Shift + Z">重做</button>
+    <button id="bb-validate">验证</button><button id="bb-trial" class="bb-layout-action">试玩</button>
+    <button id="bb-queue-open" class="bb-layout-action">队列编辑器 ↗</button>
+    <span class="bb-spacer"></span><button id="bb-toggle-info">信息</button><button id="bb-export" class="secondary">导出</button><button id="bb-exit" class="secondary">返回游戏</button>
+  </header>
+  <div class="bb-workspace">
+    <aside class="bb-left" aria-label="工具">
+      <div class="bb-section"><h2>编辑工具</h2><div class="bb-tools">
+        <button data-tool="brush" class="active">画笔 <kbd>B</kbd></button><button data-tool="erase">橡皮擦 <kbd>E</kbd></button>
+        <button data-tool="select">点选 / 框选 <kbd>V</kbd></button><button data-tool="pan">移动画布 <kbd>H</kbd></button>
+      </div></div>
+      <div class="bb-section"><h2>泡泡颜色</h2><div class="bb-colors" id="bb-colors"></div><p class="bb-small" id="bb-color-name">红色</p></div>
+      <div class="bb-section"><h2>球类型</h2><div class="bb-type-picker"><button id="bb-bubble-normal" class="active">普通球</button><button id="bb-bubble-hidden">隐藏球 ?</button></div><p class="bb-small">选中已有球后点击类型，可批量转换并保留各自原色；未选球时切换画笔类型。</p></div>
+      <div class="bb-section"><h2>变色球配对</h2><label>Pair ID<input id="bb-pair-id" maxlength="64" placeholder="留空自动生成"></label><div class="bb-stack"><button id="bb-pair-add">将所选球设为变色球</button><button id="bb-pair-remove">取消所选球配对</button></div><p class="bb-small">逐个点击两颗不同颜色的球，再建立配对；也可分别选中并填写相同 Pair ID。每组恰好两颗才能保存。</p></div>
+      <div class="bb-section"><h2>选区操作</h2><div class="bb-stack"><button id="bb-recolor">应用当前颜色</button><button id="bb-delete">删除泡泡</button><button id="bb-copy">复制选区</button><button id="bb-paste">粘贴预览</button></div><p id="bb-selection" class="bb-small">尚未框选</p></div>
+      <div class="bb-section"><h2>地图预览</h2><div class="bb-stack"><button id="bb-full" class="active">完整地图</button><button id="bb-first">首屏预览 · 30 行</button></div></div>
+      <div class="bb-section"><h2>底部行管理</h2><div class="bb-stack"><button id="bb-add1">增加 1 行</button><button id="bb-add5">增加 5 行</button><button id="bb-trim">裁剪底部空行</button></div></div>
+      <p class="bb-small">点球追加选择，再点取消；点空白清空<br>按住已选球拖动可移动；拖出矩形可框选<br>右键拖动擦除 · 滚轮缩放 · 空格平移<br>Shift 框选追加 · Option / Alt 框选移除<br>Esc 取消预览或选择</p>
+    </aside>
+    <main class="bb-center" aria-label="关卡棋盘">
+      <canvas id="bb-canvas" tabindex="0" role="application" aria-label="六边形棋盘编辑画布"></canvas>
+      <div class="bb-board-label" id="bb-board-label"></div>
+      <div class="bb-canvas-footer"><button id="bb-zoom-out">−</button><button id="bb-zoom">100%</button><button id="bb-zoom-in">+</button><button id="bb-fit">适合窗口</button><span id="bb-coordinate">col — · row —</span></div>
+    </main>
+    <aside class="bb-right" aria-label="关卡信息">
+      <div class="bb-section"><h2>关卡信息 <span id="bb-state" class="bb-ok">Clean</span></h2>
+        <label>Level ID<input id="bb-id" readonly></label>
+        <label>备注<textarea id="bb-note" rows="3" maxlength="4000" placeholder="备注不进入游戏画面"></textarea></label><div id="bb-dimensions" class="bb-small"></div>
+      </div>
+      <div id="bb-error-panel" class="bb-section" hidden><h2>操作错误</h2><p id="bb-last-error" class="bb-small bb-error"></p><div class="bb-stack"><button id="bb-retry">重试读取</button><button id="bb-diagnostic">导出诊断</button></div></div>
+      <div class="bb-section"><h2>关卡统计</h2><div class="bb-metrics"><div class="bb-metric"><strong id="bb-total">0</strong><span>总泡泡数</span></div><div class="bb-metric"><strong id="bb-hidden-count">0</strong><span>隐藏球数</span></div><div class="bb-metric"><strong id="bb-used">0</strong><span>已用颜色</span></div><div class="bb-metric"><strong id="bb-first-count">0</strong><span>首屏泡泡数</span></div><div class="bb-metric"><strong id="bb-rows">30</strong><span>总行数</span></div></div><div class="bb-counts" id="bb-counts"></div><p id="bb-right-selection" class="bb-small">尚未框选</p></div>
+      <div class="bb-section"><h2>弹药队列摘要</h2><div id="bb-ammo-summary" class="bb-small"></div><button id="bb-summary-queue" style="margin-top:12px">打开独立队列页 ↗</button></div>
+      <div class="bb-section"><h2>验证结果 <span id="bb-issue-count"></span></h2><div id="bb-issues"></div><p class="bb-small">结构错误阻止保存；弹药缺失或容量不足只阻止试玩。容量足够不代表射击顺序一定可解。</p></div>
+    </aside>
+  </div>
+  <main id="bb-queue" class="bb-queue" aria-label="独立弹药队列编辑器">
+    <div class="bb-queue-inner"><div class="bb-queue-main">
+      <div class="bb-queue-title" id="bb-queue-title">弹药队列</div><p class="bb-small">按列表顺序发射。这里只保存弹药配置，棋盘布局由关卡编辑器维护。</p>
+      <div class="bb-ammo-form"><label>颜色<select id="bb-ammo-color"></select></label><label>规格<select id="bb-ammo-size"><option value="small">小 · 容量 4</option><option value="medium">中 · 容量 6</option><option value="large">大 · 容量 10</option></select></label><label>类型<select id="bb-ammo-type"><option value="">普通弹</option><option value="bounce">反弹弹</option></select></label><button id="bb-ammo-add" class="primary">添加一发</button></div>
+      <div class="bb-queue-selection"><strong id="bb-queue-selected">已选 0 发</strong><button id="bb-queue-select-all">全选</button><button id="bb-queue-clear">清空选择</button><span class="bb-small">Shift 选连续区间 · Ctrl/⌘ 增减单项</span></div>
+      <div id="bb-queue-batch" class="bb-queue-batch" hidden>
+        <div class="bb-queue-batch-fields"><label>颜色<select id="bb-batch-color"><option value="keep">保持原值</option></select></label><label>规格<select id="bb-batch-size"><option value="keep">保持原值</option><option value="small">小 · 容量 4</option><option value="medium">中 · 容量 6</option><option value="large">大 · 容量 10</option></select></label><label>类型<select id="bb-batch-type"><option value="keep">保持原值</option><option value="normal">普通弹</option><option value="bounce">反弹弹</option></select></label><button id="bb-batch-apply" class="primary">应用修改</button></div>
+        <div class="bb-queue-batch-actions"><label>移到第 <input id="bb-batch-position" type="number" min="1" step="1" inputmode="numeric"> 发之前</label><button id="bb-batch-move">移动</button><button id="bb-batch-delete">删除所选</button></div>
+      </div>
+      <div id="bb-queue-list" class="bb-queue-list"></div>
+    </div><aside class="bb-queue-aside"><h2>容量校验</h2><div id="bb-queue-capacity"></div><div id="bb-queue-issues" style="margin-top:18px"></div><p class="bb-small">左侧为配置容量，右侧为棋盘需求。容量不足允许保存队列，但会阻止试玩。</p></aside></div>
+  </main>
+</section>
+<dialog id="bb-dialog"><h2 id="bb-dialog-title"></h2><div id="bb-dialog-body"></div><div id="bb-dialog-actions" class="bb-dialog-actions"></div></dialog>
+<div id="bb-toast" role="status" aria-live="polite"></div>

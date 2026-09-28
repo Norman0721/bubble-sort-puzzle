@@ -1,0 +1,532 @@
+{
+  "mode": "actual bundled mobile gameplay, headless renderer, greedy player",
+  "levels": [
+    {
+      "level": 1,
+      "totalAmmo": 1,
+      "shots": 1,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 2,
+      "totalAmmo": 2,
+      "shots": 2,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 3,
+      "totalAmmo": 2,
+      "shots": 2,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 4,
+      "totalAmmo": 4,
+      "shots": 4,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 5,
+      "totalAmmo": 11,
+      "shots": 11,
+      "result": "won",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 6,
+      "totalAmmo": 3,
+      "shots": 3,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 7,
+      "totalAmmo": 2,
+      "shots": 2,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 8,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "won",
+      "unreachableForGreedy": 2,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 9,
+      "totalAmmo": 8,
+      "shots": 8,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1
+      }
+    },
+    {
+      "level": 10,
+      "totalAmmo": 15,
+      "shots": 15,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "g": 2,
+        "p": 1
+      }
+    },
+    {
+      "level": 11,
+      "totalAmmo": 11,
+      "shots": 8,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 12,
+      "totalAmmo": 3,
+      "shots": 3,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 13,
+      "totalAmmo": 16,
+      "shots": 16,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 14,
+      "totalAmmo": 16,
+      "shots": 16,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 15,
+      "totalAmmo": 19,
+      "shots": 17,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 16,
+      "totalAmmo": 19,
+      "shots": 19,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1
+      }
+    },
+    {
+      "level": 17,
+      "totalAmmo": 16,
+      "shots": 16,
+      "result": "exhausted",
+      "unreachableForGreedy": 2,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 1
+      }
+    },
+    {
+      "level": 18,
+      "totalAmmo": 12,
+      "shots": 10,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 19,
+      "totalAmmo": 16,
+      "shots": 16,
+      "result": "exhausted",
+      "unreachableForGreedy": 2,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1,
+        "p": 3,
+        "b": 4
+      }
+    },
+    {
+      "level": 20,
+      "totalAmmo": 13,
+      "shots": 11,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 21,
+      "totalAmmo": 14,
+      "shots": 13,
+      "result": "won",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 22,
+      "totalAmmo": 17,
+      "shots": 17,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 1
+      }
+    },
+    {
+      "level": 23,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "exhausted",
+      "unreachableForGreedy": 4,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 9,
+        "g": 2,
+        "p": 4
+      }
+    },
+    {
+      "level": 24,
+      "totalAmmo": 9,
+      "shots": 9,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 1
+      }
+    },
+    {
+      "level": 25,
+      "totalAmmo": 9,
+      "shots": 8,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 26,
+      "totalAmmo": 20,
+      "shots": 20,
+      "result": "exhausted",
+      "unreachableForGreedy": 4,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 1
+      }
+    },
+    {
+      "level": 27,
+      "totalAmmo": 20,
+      "shots": 20,
+      "result": "exhausted",
+      "unreachableForGreedy": 2,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 2,
+        "r": 5
+      }
+    },
+    {
+      "level": 28,
+      "totalAmmo": 11,
+      "shots": 11,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 1
+      }
+    },
+    {
+      "level": 29,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 1
+      }
+    },
+    {
+      "level": 30,
+      "totalAmmo": 15,
+      "shots": 15,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "p": 3,
+        "b": 6
+      }
+    },
+    {
+      "level": 31,
+      "totalAmmo": 19,
+      "shots": 19,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1
+      }
+    },
+    {
+      "level": 32,
+      "totalAmmo": 14,
+      "shots": 10,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 33,
+      "totalAmmo": 12,
+      "shots": 12,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "g": 2
+      }
+    },
+    {
+      "level": 34,
+      "totalAmmo": 13,
+      "shots": 12,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 35,
+      "totalAmmo": 30,
+      "shots": 30,
+      "result": "exhausted",
+      "unreachableForGreedy": 5,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 13,
+        "p": 2,
+        "c": 3,
+        "o": 2
+      }
+    },
+    {
+      "level": 36,
+      "totalAmmo": 15,
+      "shots": 15,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "g": 3,
+        "p": 1,
+        "y": 2
+      }
+    },
+    {
+      "level": 37,
+      "totalAmmo": 13,
+      "shots": 12,
+      "result": "won",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 38,
+      "totalAmmo": 14,
+      "shots": 11,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 39,
+      "totalAmmo": 12,
+      "shots": 11,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 40,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 2,
+        "y": 2
+      }
+    },
+    {
+      "level": 41,
+      "totalAmmo": 17,
+      "shots": 17,
+      "result": "won",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 42,
+      "totalAmmo": 10,
+      "shots": 10,
+      "result": "won",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 43,
+      "totalAmmo": 12,
+      "shots": 11,
+      "result": "won",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {}
+    },
+    {
+      "level": 44,
+      "totalAmmo": 16,
+      "shots": 16,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "b": 1
+      }
+    },
+    {
+      "level": 45,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "exhausted",
+      "unreachableForGreedy": 2,
+      "watchdogs": 0,
+      "remaining": {
+        "p": 1
+      }
+    },
+    {
+      "level": 46,
+      "totalAmmo": 31,
+      "shots": 31,
+      "result": "exhausted",
+      "unreachableForGreedy": 4,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 7,
+        "o": 4,
+        "c": 4,
+        "r": 1,
+        "g": 1
+      }
+    },
+    {
+      "level": 47,
+      "totalAmmo": 12,
+      "shots": 12,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1
+      }
+    },
+    {
+      "level": 48,
+      "totalAmmo": 14,
+      "shots": 14,
+      "result": "exhausted",
+      "unreachableForGreedy": 0,
+      "watchdogs": 0,
+      "remaining": {
+        "y": 1
+      }
+    },
+    {
+      "level": 49,
+      "totalAmmo": 12,
+      "shots": 12,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 1,
+        "y": 3
+      }
+    },
+    {
+      "level": 50,
+      "totalAmmo": 37,
+      "shots": 37,
+      "result": "exhausted",
+      "unreachableForGreedy": 1,
+      "watchdogs": 0,
+      "remaining": {
+        "r": 2,
+        "g": 1,
+        "p": 1,
+        "o": 1
+      }
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-09-21T04:26:46.963Z",
+  "elapsedMs": 8347,
+  "won": 25,
+  "exhausted": 25,
+  "errorCount": 0
+}

@@ -1,0 +1,45 @@
+#bb-home {position:fixed;inset:0;z-index:15;overflow:hidden;background:#10121e;background-image:radial-gradient(ellipse at 75% 15%,#254b4938,transparent 65%);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;color:#fff}
+#bb-home[hidden],#bb-home [hidden] {display:none!important}
+#bb-home * {box-sizing:border-box}
+#bb-home-frame {position:absolute;width:672px;height:1080px;left:50%;top:50%;transform-origin:center center;transform:translate(-50%,-50%);opacity:0}
+#bb-home.bh-visible #bb-home-frame {opacity:1;animation:bh-enter .2s ease-out}
+#bb-home .bh-background {position:absolute;inset:0;background-image:var(--bh-background);background-size:672px 1080px;pointer-events:none}
+#bb-home .bh-logo {position:absolute;top:370px;left:94px;width:484px;margin:0;line-height:60px;text-align:center;font-size:44px;letter-spacing:4px;font-weight:750;color:#f5fff7;text-shadow:0 2px 0 #547368,0 5px 12px #0006;z-index:10}
+#bb-home .bh-logo::before {content:"";position:absolute;left:50%;top:-26px;width:44px;height:3px;border-radius:50%;transform:translateX(-50%);background:linear-gradient(90deg,transparent,#a4d2aa,transparent);opacity:.6}
+#bb-home .bh-bubbles {position:absolute;top:449px;left:254px;display:flex;gap:12px;z-index:10;pointer-events:none}
+#bb-home .bh-bubble {position:relative;display:block;width:32px;height:32px;border-radius:50%;border:1px solid #ffffff77;box-shadow:inset -2px -3px 5px #0003,0 4px 7px #0003}
+#bb-home .bh-bubble::before {content:"";position:absolute;top:4px;left:5px;width:11px;height:5px;background:#ffffffe0;border-radius:50%;transform:rotate(-35deg)}
+#bb-home .bh-bubble::after {content:"";position:absolute;left:4px;top:13px;width:3px;height:3px;border-radius:50%;background:#ffffff70}
+#bb-home .bh-bubble.red {background:radial-gradient(circle at 30% 24%,#ffd7c5 0%,#e74c3c 45%,#ad3254 100%)}
+#bb-home .bh-bubble.blue {background:radial-gradient(circle at 30% 24%,#d6f8ff 0%,#3498db 45%,#3353ac 100%)}
+#bb-home .bh-bubble.green {background:radial-gradient(circle at 30% 24%,#d8ffd2 0%,#2ecc71 45%,#248981 100%)}
+#bb-home .bh-bubble.yellow {background:radial-gradient(circle at 30% 24%,#fff9cb 0%,#f1c40f 45%,#bd8f37 100%)}
+#bb-home .bh-buttons {position:absolute;inset:0;z-index:20;pointer-events:none}
+#bb-home .bh-button {position:absolute;left:226px;width:220px;height:52px;padding:0 14px;border:2px solid #2a2e45;border-radius:16px;background:linear-gradient(#2b3048,#22253a);box-shadow:inset 0 1px 0 #ffffff12,0 5px 0 #0c1420aa,0 8px 16px #0003;color:#c6cbe8;font:600 18px/48px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;cursor:pointer;text-align:center;white-space:nowrap;transform-origin:center center;transition:transform .15s ease,filter .15s ease;pointer-events:auto;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none}
+#bb-home .bh-primary {top:534px;border-color:#3d7a55;background:linear-gradient(#36694b,#2c5a3f);color:#dff5e5;box-shadow:inset 0 1px 0 #bdf8cc22,0 5px 0 #163725,0 9px 21px #06110c55}
+#bb-home #bh-levels {top:604px}#bb-home #bh-editor {top:674px}
+@media(hover:hover) and (pointer:fine){#bb-home .bh-button:hover:not(:disabled) {transform:scale(1.04);filter:brightness(1.08)}}
+#bb-home .bh-button.bh-pressed:not(:disabled) {transform:scale(.98);transition-duration:.08s;filter:brightness(.95)}
+#bb-home .bh-button:focus-visible {outline:2px solid #fff9cb;outline-offset:6px}
+#bb-home .bh-button:disabled {opacity:.4;cursor:default;transform:none;filter:none}
+#bb-home #bh-perfect {position:absolute;top:745px;left:24px;width:624px;height:20px;margin:0;text-align:center;font-size:13px;line-height:20px;color:#8b93b8;z-index:20}
+#bb-home #bh-perfect.bh-all-perfect {color:#ffd54a}
+#bb-home #bh-loading {position:absolute;top:805px;left:24px;width:624px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:13px;color:#abbfc1;z-index:100}
+#bb-home .bh-spinner {width:15px;height:15px;border:2px solid #79b39b55;border-top-color:#b8edc8;border-radius:50%;animation:bh-spin 1s linear infinite}
+#bb-home #bh-error {position:absolute;top:800px;left:100px;width:472px;text-align:center;color:#c9d3e6;font-size:13px;line-height:1.7;z-index:100}
+#bb-home #bh-retry {display:block;margin:10px auto 0;border:1px solid #5b756c;border-radius:8px;color:#d5ecd9;background:#243e37;padding:8px 20px;font:13px -apple-system,"PingFang SC",sans-serif;cursor:pointer;min-height:52px}
+#bb-home #bh-retry:focus-visible {outline:2px solid #fff9cb;outline-offset:3px}
+#bb-home #bh-rotate {position:absolute;left:max(12px,env(safe-area-inset-left));right:max(12px,env(safe-area-inset-right));top:max(8px,env(safe-area-inset-top));margin:0;text-align:center;font-size:12px;color:#a3b6bc;pointer-events:none}
+#bb-home:not(.bh-reduced) .bh-logo {animation:bh-title-float 3.2s ease-in-out infinite}
+#bb-home:not(.bh-reduced) .bh-bubble {animation:bh-bubble-float 1.8s ease-in-out infinite}
+#bb-home .bh-bubble:nth-child(2){animation-delay:.13s}#bb-home .bh-bubble:nth-child(3){animation-delay:.26s}#bb-home .bh-bubble:nth-child(4){animation-delay:.39s}
+@keyframes bh-title-float {0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes bh-bubble-float {0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes bh-spin {to{transform:rotate(360deg)}}
+#bb-home.bh-reduced .bh-spinner {animation:none}
+@media(prefers-reduced-motion:reduce){#bb-home .bh-logo,#bb-home .bh-bubble,#bb-home .bh-spinner{animation:none!important}#bb-home-frame{transition:none!important}}
+
+#bb-home .bh-button.bh-released{transition-duration:.06s}
+
+@keyframes bh-enter{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){#bb-home-frame{animation:none!important}}

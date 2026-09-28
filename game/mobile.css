@@ -1,0 +1,10 @@
+/* Keep the Phaser FIT parent inside system safe areas. */
+#game {position:absolute;top:env(safe-area-inset-top,0px);left:env(safe-area-inset-left,0px);width:calc(100vw - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px));height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));overscroll-behavior:none}
+@media(pointer:coarse){
+ #bb-launch{display:none!important}
+ #bb-home .bh-button{left:160px;width:352px;height:104px;border-radius:24px;font-size:32px;line-height:100px}
+ #bb-home #bh-primary{top:508px}#bb-home #bh-levels{top:636px}#bb-home #bh-editor{top:764px}
+ #bb-home #bh-perfect{top:884px;height:28px;line-height:28px;font-size:26px}
+ #bb-home #bh-error{top:930px;font-size:24px}
+ #bb-home #bh-retry{min-height:104px;font-size:26px;min-width:220px}
+}
