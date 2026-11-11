@@ -2,7 +2,7 @@
 
 **围绕颜色消除、有限弹药与关卡创作的 HTML5 游戏原型。**
 
-[在线试玩 · V1.7](https://Norman0721.github.io/bubble-sort-puzzle/) · [关卡编辑器 · V1.10](https://Norman0721.github.io/bubble-sort-puzzle/editor.html) · [设计案例](docs/PORTFOLIO.md)
+[在线试玩 · V1.7](https://Norman0721.github.io/bubble-sort-puzzle/) · [关卡编辑器 · V1.10](https://Norman0721.github.io/bubble-sort-puzzle/editor.html) · [设计案例](https://github.com/Norman0721/bubble-sort-puzzle/blob/mobil/docs/PORTFOLIO.md)
 
 本项目展示从可玩原型到关卡制作工具的迭代过程：蜂窝棋盘、弹药配置、隐藏球、成对变色球，以及适配手机的操作流程。项目通过 AI 辅助实现与迭代，源码、测试和版本记录一并保留，方便查看设计如何落地。
 
@@ -10,7 +10,7 @@
 
 下图为项目中的界面设计稿，不是运行截图。
 
-<img src="game/design/mobile-home.png" width="260" alt="手机首页设计稿"> <img src="game/design/mobile-game.png" width="260" alt="手机游戏界面设计稿">
+<img src="https://raw.githubusercontent.com/Norman0721/bubble-sort-puzzle/mobil/game/design/mobile-home.png" width="260" alt="手机首页设计稿"> <img src="https://raw.githubusercontent.com/Norman0721/bubble-sort-puzzle/mobil/game/design/mobile-game.png" width="260" alt="手机游戏界面设计稿">
 
 ## 体验方式
 
@@ -55,6 +55,6 @@ python3 editor/build.py --blank-levels --output "Bubble Sort Preview.html"
 
 ## 版本选择
 
-V1.7 用于开箱即玩的作品演示；V1.8–V1.10 专注从零创建关卡，采用独立存储。最新编辑器 V1.10 保留空白关卡模式。完整迭代记录见 [开发记录](docs/DEVELOPMENT.md)。
+V1.7 用于开箱即玩的作品演示；V1.8–V1.10 专注从零创建关卡，采用独立存储。最新编辑器 V1.10 保留空白关卡模式。开发提交记录见 [mobil 分支历史](https://github.com/Norman0721/bubble-sort-puzzle/commits/mobil/)。
 
 本仓库用于作品展示，暂未授予项目整体的开源许可；第三方组件遵循其各自许可。
